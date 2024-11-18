@@ -93,35 +93,35 @@
             Main Menu
           </p>
             <a
-              href="/dashboard"
+              href="/physician"
               class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground text-lg transition-all hover:text-primary hover:bg-blue-100"
             >
               <House class="h-5 w-5 text-primary" />
               Overview
             </a>
             <a
-            href="/dashboard"
+            href="/physician"
             class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground text-lg transition-all hover:text-primary hover:bg-blue-100"
           >
             <Dumbbell class="h-5 w-5 text-primary" />
             Protocols
           </a>
             <a
-              href="/dashboard"
+              href="/physician"
               class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground text-lg transition-all hover:text-primary hover:bg-blue-100"
             >
               <Dumbbell class="h-5 w-5 text-primary" />
               Exercises
             </a>
             <a
-              href="/dashboard"
+              href="/physician"
               class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground text-lg transition-all hover:text-primary hover:bg-blue-100"
             >
               <TrendingUp class="h-5 w-5 text-primary" />
              Analytics
             </a>
             <a
-            href="/dashboard"
+            href="/physician"
             class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground text-lg transition-all hover:text-primary hover:bg-blue-100"
           >
               <CalendarDays class="h-5 w-5 text-primary" />
@@ -130,7 +130,11 @@
            
           </nav>
         </div>
-        <div class="mt-auto p-4"></div>
+        <div class="mt-auto p-4">
+          <Card.Root>
+          
+          </Card.Root>
+        </div>
       </div>
     </div>
   
@@ -146,7 +150,7 @@
           </Sheet.Trigger>
           <Sheet.Content side="left" class="flex flex-col">
             <nav class="grid gap-2 text-lg font-medium">
-              <a href="##" class="flex items-center gap-2 text-lg font-semibold">
+              <a href="/physician" class="flex items-center gap-2 text-lg font-semibold">
                 <img
                 src="logo.png"
                 width={30}
@@ -156,37 +160,51 @@
                 <span class="">Rehab Plus</span>
               </a>
               <a
-                href="##"
+                href="/physician"
                 class="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
               >
                 <House class="h-5 w-5 text-primary" />
                 Overview
               </a>
               <a
-                href="##"
+              href="/physician"
+              class="mx-[-0.65rem] flex items-center gap-4 rounded-xl bg-muted px-3 py-2 text-foreground hover:text-foreground"
+            >
+            <Dumbbell class="h-5 w-5 text-primary" />
+            Protocols
+            </a>
+              <a
+                href="/physician"
                 class="mx-[-0.65rem] flex items-center gap-4 rounded-xl bg-muted px-3 py-2 text-foreground hover:text-foreground"
               >
               <Dumbbell class="h-5 w-5 text-primary" />
               Exercises
               </a>
               <a
-                href="##"
+                href="/physician"
                 class="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
               >
               <TrendingUp class="h-5 w-5 text-primary" />
               Progress
               </a>
               <a
-                href="##"
+              href="/physician"
+              class="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
+            >
+            <TrendingUp class="h-5 w-5 text-primary" />
+            Analytics
+            </a>
+              <a
+                href="/physician"
                 class="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
               >
               <CalendarDays class="h-5 w-5 text-primary" />
-              Resources
+              Patients
               </a>
               
             </nav>
             <div class="mt-auto">
-              <Card.Root>/auth/login/github</Card.Root>
+              <Card.Root></Card.Root>
             </div>
           </Sheet.Content>
         </Sheet.Root>
@@ -209,7 +227,9 @@
             <DropdownMenu.Separator />
             <DropdownMenu.Item>Settings</DropdownMenu.Item>
             <DropdownMenu.Item>Support</DropdownMenu.Item>
-            <DropdownMenu.Item><ThemeToggle /></DropdownMenu.Item>
+            <DropdownMenu.Item>
+                <ThemeToggle />
+            </DropdownMenu.Item>
             <DropdownMenu.Separator />
             <DropdownMenu.Item>Logout</DropdownMenu.Item>
           </DropdownMenu.Content>

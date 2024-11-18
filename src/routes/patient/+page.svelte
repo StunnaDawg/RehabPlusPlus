@@ -44,9 +44,9 @@
 	</script>
 	
 	<div class="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
-	  <div class="hidden border-r bg-muted/40 md:block">
+	  <div class="hidden border-r border-muted bg-muted/40 md:block">
 		<div class="flex h-full max-h-screen flex-col gap-2">
-		  <div class="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6">
+		  <div class="flex h-14 items-center border-b border-muted px-4 lg:h-[60px] lg:px-6">
 			<a href="/" class="flex items-center gap-2 font-semibold">
 			  <img
 					src="logo.png"
@@ -73,28 +73,28 @@
 			  Main Menu
 			</p>
 			  <a
-				href="/dashboard"
+				href="/patient"
 				class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground text-lg transition-all hover:text-primary hover:bg-blue-100"
 			  >
 				<House class="h-5 w-5 text-primary" />
 				Overview
 			  </a>
 			  <a
-				href="/dashboard"
+				href="/patient/exercises"
 				class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground text-lg transition-all hover:text-primary hover:bg-blue-100"
 			  >
 				<Dumbbell class="h-5 w-5 text-primary" />
 				Exercises
 			  </a>
 			  <a
-				href="/dashboard"
+				href="/patient/progress"
 				class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground text-lg transition-all hover:text-primary hover:bg-blue-100"
 			  >
 				<TrendingUp class="h-5 w-5 text-primary" />
 				Progress
 			  </a>
 			  <a
-			  href="/dashboard"
+			  href="/patient/resources"
 			  class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground text-lg transition-all hover:text-primary hover:bg-blue-100"
 			>
 				<CalendarDays class="h-5 w-5 text-primary" />
@@ -129,28 +129,28 @@
 				  <span class="">Rehab Plus</span>
 				</a>
 				<a
-				  href="##"
+				  href="/patient"
 				  class="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
 				>
 				  <House class="h-5 w-5 text-primary" />
 				  Overview
 				</a>
 				<a
-				  href="##"
+				  href="/patient/exercises"
 				  class="mx-[-0.65rem] flex items-center gap-4 rounded-xl bg-muted px-3 py-2 text-foreground hover:text-foreground"
 				>
 				<Dumbbell class="h-5 w-5 text-primary" />
 				Exercises
 				</a>
 				<a
-				  href="##"
+				  href="/patient/progress"
 				  class="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
 				>
 				<TrendingUp class="h-5 w-5 text-primary" />
 				Progress
 				</a>
 				<a
-				  href="##"
+				  href="/patient/resources"
 				  class="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
 				>
 				<CalendarDays class="h-5 w-5 text-primary" />
@@ -159,7 +159,7 @@
 				
 			  </nav>
 			  <div class="mt-auto">
-				<Card.Root>/auth/login/github</Card.Root>
+				<Card.Root></Card.Root>
 			  </div>
 			</Sheet.Content>
 		  </Sheet.Root>
