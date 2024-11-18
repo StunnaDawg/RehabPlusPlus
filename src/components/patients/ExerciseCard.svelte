@@ -85,13 +85,6 @@
             <p class="text-sm">Pain Level: {exercise.completionDetails.pain}/10</p>
           </div>
         {/if}
-  
-        <button
-          on:click={startWorkout}
-          class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors"
-        >
-          Start Workout
-        </button>
       </div>
     {/if}
   
