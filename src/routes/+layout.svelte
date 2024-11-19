@@ -1,5 +1,6 @@
 <script>
 	import '../app.css';
+	import { ModeWatcher } from "mode-watcher";
 	import { goto, invalidate } from '$app/navigation';
 
 	const { data: propsData, children } = $props();
@@ -31,4 +32,4 @@
 
 {@render children()}
 
-<style></style>
+<ModeWatcher />

@@ -1,6 +1,6 @@
 import { redirect } from '@sveltejs/kit';
 
-export const GET = async (event : any) => {
+export const GET = async (event) => {
 	const {
 		url,
 		locals: { supabase }
@@ -18,3 +18,4 @@ export const GET = async (event : any) => {
   // return the user to an error page with instructions
   throw redirect(303, '/auth/auth-code-error');
 };
+
