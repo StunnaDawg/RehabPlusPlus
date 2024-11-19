@@ -10,11 +10,10 @@
 	import * as Sheet from '$lib/components/ui/sheet/index';
   import { Progress } from "$lib/components/ui/progress/index";
 
-  import ThemeToggle from "../../components/ThemeToggle.svelte";
+  import ThemeToggle from "../../../components/ThemeToggle.svelte";
 
-  import ExercisePlan from '../../components/patients/ExercisePlan.svelte'
+  import ExercisePlan from '../../../components/patients/ExercisePlan.svelte'
  
-  
   // Sample data
   const exerciseStats = {
     completed: 24,
