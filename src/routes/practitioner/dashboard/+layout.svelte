@@ -1,5 +1,5 @@
 <script lang="ts">
-	import '../../app.css';
+	import '../../../app.css';
 	import {
 		CircleUser,
 		ChartLine,
@@ -30,11 +30,6 @@
 		BookOpenText,
 
 		ChartNoAxesCombined
-
-
-
-
-
 	} from 'lucide-svelte';
 
 	import { Button } from '$lib/components/ui/button';
@@ -42,7 +37,7 @@
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index';
 	import * as Sheet from '$lib/components/ui/sheet/index';
 
-	import ThemeToggle from '../../components/ThemeToggle.svelte';
+	import ThemeToggle from '../../../components/ThemeToggle.svelte';
 	import { ModeWatcher } from 'mode-watcher';
 
 	type NavItem = {
@@ -52,20 +47,20 @@
 	};
 
 	const navItems: NavItem[] = [
-		{ href: '/physician', label: 'Overview', icon: House },
-    { href: '/physician/patients', label: 'Patients', icon: UserPlusIcon},
-		{ href: '/physician', label: 'Protocols', icon: BookOpenText },
-		{ href: '/physician', label: 'Exercises', icon: Dumbbell },
-		{ href: '/physician', label: 'Analytics', icon: ChartNoAxesCombined },
+		{ href: '/practitioner/dashboard', label: 'Overview', icon: House },
+    { href: '/practitioner/dashboard/patients', label: 'Patients', icon: UserPlusIcon},
+		{ href: '/practitioner/dashboard', label: 'Protocols', icon: BookOpenText },
+		{ href: '/practitioner/dashboard', label: 'Exercises', icon: Dumbbell },
+		{ href: '/practitioner/dashboard', label: 'Analytics', icon: ChartNoAxesCombined },
 
 	];
 
 	const mobileNavItems: NavItem[] = [
-		{ href: '/physician', label: 'Overview', icon: House },
-    { href: '/physician', label: 'Patients', icon: UserPlusIcon },
-		{ href: '/physician', label: 'Protocols', icon: BookOpenText },
-		{ href: '/physician', label: 'Exercises', icon: Dumbbell },
-		{ href: '/physician', label: 'Analytics', icon: ChartNoAxesCombined },
+		{ href: '/practitioner/dashboard', label: 'Overview', icon: House },
+    { href: '/practitioner/dashboard', label: 'Patients', icon: UserPlusIcon },
+		{ href: '/practitioner/dashboard', label: 'Protocols', icon: BookOpenText },
+		{ href: '/practitioner/dashboard', label: 'Exercises', icon: Dumbbell },
+		{ href: '/practitioner/dashboard', label: 'Analytics', icon: ChartNoAxesCombined },
 	];
 </script>
 
@@ -121,7 +116,7 @@
 				</Sheet.Trigger>
 				<Sheet.Content side="left" class="flex flex-col">
 					<nav class="grid gap-2 text-lg font-medium">
-						<a href="/physician" class="flex items-center gap-2 text-lg font-semibold">
+						<a href="/practitioner/dashboard" class="flex items-center gap-2 text-lg font-semibold">
 							<img src="logo.png" width={30} height={25} alt="RehabPlus Logo" />
 							<span class="">Rehab Plus</span>
 						</a>
@@ -162,7 +157,7 @@
 						<ThemeToggle />
 					</DropdownMenu.Item>
 					<DropdownMenu.Separator />
-					<DropdownMenu.Item>Logout</DropdownMenu.Item>
+					<DropdownMenu.Item href="/auth/logout">Log Out</DropdownMenu.Item>
 				</DropdownMenu.Content>
 			</DropdownMenu.Root>
 		</header>

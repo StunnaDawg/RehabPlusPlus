@@ -4,6 +4,7 @@
 	import { Button } from '$lib/components/ui/button';
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index';
 	import ThemeToggle from '../ThemeToggle.svelte';
+	import * as Dialog from "$lib/components/ui/dialog";
 	import { onMount } from 'svelte';
 	let state = false;
 	/**
@@ -115,20 +116,8 @@
 
 		<!-- Right side: Buttons and Theme Toggle -->
 		<div class="absolute right-0 flex items-center space-x-6">
-			<DropdownMenu.Root>
-				<DropdownMenu.Trigger><Button variant="default">Login</Button></DropdownMenu.Trigger>
-				<DropdownMenu.Content>
-					<DropdownMenu.Group>
-						<DropdownMenu.Item>
-							<a href="/">Healthcare Login</a>
-						</DropdownMenu.Item>
-						<DropdownMenu.Item>
-							<a href="/auth/login">Patient Login</a>
-						</DropdownMenu.Item>
-					</DropdownMenu.Group>
-				</DropdownMenu.Content>
-			</DropdownMenu.Root>
-			<Button>Book a Demo</Button>
+			<Button variant="default" href="/auth/login">Login</Button>
+			<Button variant="outline">Book a Demo</Button>
 			<ThemeToggle />
 		</div>
 	</div>
